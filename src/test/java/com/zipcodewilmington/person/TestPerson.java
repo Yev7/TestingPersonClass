@@ -95,4 +95,44 @@ public class TestPerson {
         Integer actual = person.getAge();
         Assert.assertEquals(expected, actual);
     }
+    @Test
+    public void testSetFavoriteColor(){
+        Person person = new Person();
+        String expected = "Blue";
+        person.setFavoriteColor(expected);
+        String actual = person.getFavoriteColor();
+        Assert.assertEquals(expected, actual);
+    }
+    @Test
+    public void testSetBirthDay(){
+        Person person = new Person();
+        String expected = "08/13/2002";
+        person.setBirthDay(expected);
+        String actual = person.getBirthDay();
+        Assert.assertEquals(expected, actual);
+    }
+    @Test
+    public void testSetNickName(){
+        Person person = new Person();
+        String expected = "Yev";
+        person.setNickName(expected);
+        String actual = person.getNickName();
+        Assert.assertEquals(expected, actual);
+    }
+    @Test
+    public void testSetLuckyNumber(){
+        Person person = new Person();
+        Integer expected = 3;
+        person.setLuckyNumber(expected);
+        Integer actual = person.getLuckyNumber();
+        Assert.assertEquals(expected, actual);
+    }
+    @Test
+    public void testSetSalary(){
+        Person person = new Person();
+        Integer expected = 70000;
+        person.setSalary(expected);
+        Integer actual = person.getSalary();
+        Assert.assertEquals(expected, actual);
+    }
 }
